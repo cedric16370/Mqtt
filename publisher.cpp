@@ -8,7 +8,7 @@ using namespace std;
 const string ADDRESS { "tcp://broker.emqx.io:1883" }; // adresse du broker
 const string CLIENT_ID { "Cedric" }; // identifiant du client
 const string TOPIC { "/ynov/bordeaux/" }; // topic sur lequel publier le message
-const string PAYLOAD { "Cédric" }; // message à publier
+const string PAYLOAD { "Cedric" }; // message à publier
 
 const int QOS = 0; 
 

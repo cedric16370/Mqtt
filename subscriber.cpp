@@ -17,7 +17,7 @@ struct st_mqtt_conn_info {
     string topic;
 } mqtt_conn_info = {
     "tcp://broker.emqx.io:1883",
-    "cedric-subscriber",
+    "Cedric.B",
     "/ynov/bordeaux/"
 };
 
@@ -43,9 +43,9 @@ int main(int argc, char* argv[]) {
         cout << "Connecté au broker MQTT !" << endl;
 
         // Abonnement au topic spécifié dans mqtt_conn_info
-        cout << "Abonnement au topic " << mqtt_conn_info.topic << "..." << endl;
+        cout << "Abonnement au topic Ynov" << mqtt_conn_info.topic << "..." << endl;
         client.subscribe(mqtt_conn_info.topic, 0)->wait();
-        cout << "Abonné au topic !" << endl;
+        cout << "Abonné au topic Ynov !" << endl;
 
         // Boucle infinie pour recevoir les messages
         while (true) {
